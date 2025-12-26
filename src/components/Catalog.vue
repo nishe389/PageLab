@@ -49,16 +49,16 @@ function addToCart(product) {
         router.push('/login')
     }
 }
-// Я КЛЯНУСЬ Я НЕ ЗНАЮ ПОЧЕМУ STATIONERY.ЖПЖ НЕ ВЫВОДИТ
+
 function getProductImage(product) {
-    const categoryImages = {
-        fiction: '/images/fiction.jpg',
-        textbooks: '/images/textbooks.jpg',
-        fiction: '/fiction-default.jpg',
-        textbooks: '/textbooks-default.jpg',
-        reference: '/reference-default.jpg',
-        stationery: '/stationery-default.jpg'
-    }
+  const categoryImages = {
+    fiction: '/images/feature-books.jpg',
+    textbooks: '/images/feature-textbooks.jpg',
+    reference: '/images/feature-books.jpg',
+    stationery: '/images/stationery.jpg'
+  }
+  return categoryImages[product.category] || '/images/default.jpg'
+}
     
     // Если у товара есть свое изображение, используем его
     if (product.image) {
@@ -67,7 +67,7 @@ function getProductImage(product) {
     
     // Иначе используем изображение по умолчанию для категории(да вот затычка чтобы оно использовалось, то о чем я говорил в эбауте, на самом деле мне просто лень)
     return categoryImages[product.category] || '/default-product.jpg'
-}
+
 
 function openModal(product) {
   selectedProduct.value = product
