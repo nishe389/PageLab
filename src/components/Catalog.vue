@@ -1,53 +1,53 @@
 <script setup>
-import { ref, computed } from 'vue';
-import { useRouter } from 'vue-router';
-import ProductModal from './ProductModal.vue';
+import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import ProductModal from './ProductModal.vue'
 
 const props = defineProps({
-    products: Array,
-    activeUser: Number
+  products: Array,
+  activeUser: Number
 })
 
 const emit = defineEmits(['addToCart'])
 
 const selectedCategory = ref('all')
 const searchQuery = ref('')
-const router = useRouter();
+const router = useRouter()
 const showModal = ref(false)
 const selectedProduct = ref(null)
 
 const filteredProducts = computed(() => {
-    let filtered = props.products
+  let filtered = props.products
 
-    if (selectedCategory.value !== 'all') {
-        filtered = filtered.filter(product => product.category === selectedCategory.value)
-    }
+  if (selectedCategory.value !== 'all') {
+    filtered = filtered.filter(product => product.category === selectedCategory.value)
+  }
 
-    if (searchQuery.value) {
-        const query = searchQuery.value.toLowerCase()
-        filtered = filtered.filter(product => 
-            product.name.toLowerCase().includes(query) ||
-            (product.author && product.author.toLowerCase().includes(query))
-        )
-    }
+  if (searchQuery.value) {
+    const query = searchQuery.value.toLowerCase()
+    filtered = filtered.filter(product => 
+      product.name.toLowerCase().includes(query) ||
+      (product.author && product.author.toLowerCase().includes(query))
+    )
+  }
 
-    return filtered
+  return filtered
 })
 
 const categories = [
-    { id: 'all', name: 'Все товары' },
-    { id: 'fiction', name: 'Художественная литература' },
-    { id: 'textbooks', name: 'Учебники' },
-    { id: 'reference', name: 'Справочники' },
-    { id: 'stationery', name: 'Канцелярия' }
+  { id: 'all', name: 'Все товары' },
+  { id: 'fiction', name: 'Художественная литература' },
+  { id: 'textbooks', name: 'Учебники' },
+  { id: 'reference', name: 'Справочники' },
+  { id: 'stationery', name: 'Канцелярия' }
 ]
 
 function addToCart(product) {
-    if (props.activeUser) {
-        emit('addToCart', product)
-    } else {
-        router.push('/login')
-    }
+  if (props.activeUser) {
+    emit('addToCart', product)
+  } else {
+    router.push('/login')
+  }
 }
 
 function getProductImage(product) {
@@ -57,26 +57,28 @@ function getProductImage(product) {
     reference: '/images/feature-books.jpg',
     stationery: '/images/stationery.jpg'
   }
-  return categoryImages[product.category] || '/images/default.jpg'
+  
+  if (product && product.image) {
+    return product.image
+  }
+  
+  if (product && product.category && categoryImages[product.category]) {
+    return categoryImages[product.category]
+  }
+  
+  return '/images/default.jpg'
 }
-    
-    // Если у товара есть свое изображение, используем его
-    if (product.image) {
-        return product.image
-    }
-    
-    // Иначе используем изображение по умолчанию для категории(да вот затычка чтобы оно использовалось, то о чем я говорил в эбауте, на самом деле мне просто лень)
-    return categoryImages[product.category] || '/default-product.jpg'
-
 
 function openModal(product) {
   selectedProduct.value = product
   showModal.value = true
 }
+
 function closeModal() {
   showModal.value = false
   selectedProduct.value = null
 }
+
 function addToCartFromModal(product) {
   addToCart(product)
   closeModal()
@@ -84,6 +86,7 @@ function addToCartFromModal(product) {
 </script>
 
 <template>
+
     <div class="catalog">
         <div class="filters">
             <div class="search">
