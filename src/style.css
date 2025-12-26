@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --deep-purple: #3A2D4F;
+  --light-lavender: #D8CEE3;
+  --terracotta: #B5634A;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --text-dark: #2c3e50;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--light-gray);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-weight: 500;
+  color: var(--deep-purple);
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--terracotta);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-purple);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--deep-purple);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--terracotta);
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--light-lavender);
+  outline-offset: 2px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 2em;
+  box-shadow: 0 2px 4px rgba(58, 45, 79, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
