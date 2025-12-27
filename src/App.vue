@@ -3,7 +3,7 @@ import { reactive } from 'vue';
 import { useData } from './useData';
 import modal from './components/modal.vue';
 import Footer from './components/Footer.vue';
-import logo from '../dist/images/logo.png';
+import logo from '../dist/assets/logo-BdjrIryl.png';
 
 const { state, logoutUser, addToCart } = useData();
 
