@@ -2,13 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/PageLab/assets/logo-BdjrIryl-BdjrIryl.png" />
+    <link rel="icon" type="image/x-icon" href="/PageLab/assets/logo-BdjrIryl-BdjrIryl.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PageLab</title>
-  <script type="module" crossorigin src="/PageLab/assets/index-DS-PoQcD.js"></script>
-  <link rel="stylesheet" crossorigin href="/PageLab/assets/index-B2tof6Rk.css">
-
+    <script type="module" crossorigin src="/PageLab/assets/index-DS-PoQcD.js"></script>
+    <link rel="stylesheet" crossorigin href="/PageLab/assets/index-B2tof6Rk.css">
+  </head>
   <body>
     <div id="app"></div>
+    <script>
+      // Редирект для GitHub Pages и SPA
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
