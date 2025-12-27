@@ -25,7 +25,7 @@ const local = reactive({
             price: 1200,
             author: 'Лев Толстой',
             description: 'Классический роман о войне 1812 года',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 2,
@@ -34,7 +34,7 @@ const local = reactive({
             price: 850,
             author: 'Федор Достоевский',
             description: 'Психологический роман о преступлении и его последствиях',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 3,
@@ -43,7 +43,7 @@ const local = reactive({
             price: 950,
             author: 'Михаил Булгаков',
             description: 'Мистический роман о добре и зле',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 4,
@@ -52,7 +52,7 @@ const local = reactive({
             price: 750,
             author: 'Александр Пушкин',
             description: 'Роман в стихах о любви и жизни',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 5,
@@ -61,7 +61,7 @@ const local = reactive({
             price: 680,
             author: 'Михаил Лермонтов',
             description: 'Психологический роман о судьбе поколения',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 6,
@@ -70,7 +70,7 @@ const local = reactive({
             price: 890,
             author: 'Федор Достоевский',
             description: 'Роман о доброте и чистоте души',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 7,
@@ -79,7 +79,7 @@ const local = reactive({
             price: 1100,
             author: 'Лев Толстой',
             description: 'Роман о любви и семейных ценностях',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 8,
@@ -88,7 +88,7 @@ const local = reactive({
             price: 1300,
             author: 'Федор Достоевский',
             description: 'Философский роман о вере и морали',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         // Учебники (9)
         {
@@ -98,7 +98,7 @@ const local = reactive({
             price: 800,
             author: 'Иванов И.И.',
             description: 'Учебник по математике для 10 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 10,
@@ -107,7 +107,7 @@ const local = reactive({
             price: 750,
             author: 'Петров П.П.',
             description: 'Учебник по физике для 9 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 11,
@@ -116,7 +116,7 @@ const local = reactive({
             price: 850,
             author: 'Сидоров С.С.',
             description: 'Учебник по химии для 11 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 12,
@@ -125,7 +125,7 @@ const local = reactive({
             price: 700,
             author: 'Козлова К.К.',
             description: 'Учебник по биологии для 8 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 13,
@@ -134,7 +134,7 @@ const local = reactive({
             price: 900,
             author: 'Смирнов С.С.',
             description: 'Учебник по истории России для 10 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 14,
@@ -143,7 +143,7 @@ const local = reactive({
             price: 780,
             author: 'Борисова Б.Б.',
             description: 'Учебник по английскому языку для 9 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 15,
@@ -152,7 +152,7 @@ const local = reactive({
             price: 820,
             author: 'Николаева Н.Н.',
             description: 'Учебник по литературе для 11 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 16,
@@ -161,7 +161,7 @@ const local = reactive({
             price: 730,
             author: 'Морозов М.М.',
             description: 'Учебник по географии для 8 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         {
             id: 17,
@@ -170,7 +170,7 @@ const local = reactive({
             price: 790,
             author: 'Волков В.В.',
             description: 'Учебник по обществознанию для 10 класса',
-            image: '/images/feature-textbooks.jpg'
+            image: './images/feature-textbooks.jpg'
         },
         // Справочники (7)
         {
@@ -180,7 +180,7 @@ const local = reactive({
             price: 2500,
             author: 'Издательство "Знание"',
             description: 'Энциклопедический словарь в 2 томах',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 19,
@@ -189,7 +189,7 @@ const local = reactive({
             price: 1800,
             author: 'Доктор Медицинских Наук',
             description: 'Справочник по оказанию первой помощи',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 20,
@@ -198,7 +198,7 @@ const local = reactive({
             price: 2200,
             author: 'Юридическое издательство',
             description: 'Справочник по гражданскому праву',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 21,
@@ -207,7 +207,7 @@ const local = reactive({
             price: 950,
             author: 'Лингвистический институт',
             description: 'Словарь русских синонимов',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 22,
@@ -225,7 +225,7 @@ const local = reactive({
             price: 1200,
             author: 'Мастер-класс',
             description: 'Справочник по ремонту бытовой техники',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 24,
@@ -234,7 +234,7 @@ const local = reactive({
             price: 1100,
             author: 'Шеф-повар',
             description: 'Справочник по приготовлению блюд',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         // Канцелярия (10)
         {
@@ -243,7 +243,7 @@ const local = reactive({
             category: 'stationery',
             price: 300,
             description: 'Набор из 5 гелевых ручек',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 26,
@@ -251,7 +251,7 @@ const local = reactive({
             category: 'stationery',
             price: 250,
             description: 'Блокнот в твердой обложке, 96 листов',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 27,
@@ -259,7 +259,7 @@ const local = reactive({
             category: 'stationery',
             price: 280,
             description: 'Набор из 12 цветных карандашей',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 28,
@@ -267,7 +267,7 @@ const local = reactive({
             category: 'stationery',
             price: 350,
             description: 'Папка-скоросшиватель А4',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 29,
@@ -275,7 +275,7 @@ const local = reactive({
             category: 'stationery',
             price: 450,
             description: 'Металлический степлер на 20 листов',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 30,
@@ -283,7 +283,7 @@ const local = reactive({
             category: 'stationery',
             price: 320,
             description: 'Набор из 6 маркеров для выделения текста',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 31,
@@ -291,7 +291,7 @@ const local = reactive({
             category: 'stationery',
             price: 150,
             description: 'Пластиковая линейка 30 см',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 32,
@@ -299,7 +299,7 @@ const local = reactive({
             category: 'stationery',
             price: 180,
             description: 'Канцелярский скотч 10м',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 33,
@@ -307,7 +307,7 @@ const local = reactive({
             category: 'stationery',
             price: 550,
             description: 'Научный калькулятор с солнечной батареей',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         },
         {
             id: 34,
@@ -315,7 +315,7 @@ const local = reactive({
             category: 'stationery',
             price: 220,
             description: 'Набор из 5 блоков стикеров разных цветов',
-            image: '/images/feature-stationery.jpg'
+            image: './images/feature-stationery.jpg'
         }
     ]
 })

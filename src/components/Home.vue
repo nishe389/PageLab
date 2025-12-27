@@ -7,23 +7,23 @@
         <router-link to="/catalog" class="cta-button">Перейти в каталог</router-link>
       </div>
       <div class="hero-image">
-        <img src="/images/feature-books.jpg" alt="Книжный магазин" />
+        <img src="./images/feature-books.jpg" alt="Книжный магазин" />
       </div>
     </div>
 
     <div class="features">
       <div class="feature-card">
-        <img src="/images/stationery.jpg" alt="Художественная литература" />
+        <img src="./images/stationery.jpg" alt="Художественная литература" />
         <h3>Художественная литература</h3>
         <p>Широкий выбор книг для любителей чтения</p>
       </div>
       <div class="feature-card">
-        <img src="/images/feature-textbooks.jpg" alt="Учебники" />
+        <img src="./images/feature-textbooks.jpg" alt="Учебники" />
         <h3>Учебники</h3>
         <p>Все необходимое для учебы и образования</p>
       </div>
       <div class="feature-card">
-        <img src="/images/feature-stationery.jpg" alt="Канцелярия" />
+        <img src="./images/feature-stationery.jpg" alt="Канцелярия" />
         <h3>Канцелярия</h3>
         <p>Качественные канцелярские товары</p>
       </div>

@@ -52,10 +52,10 @@ function addToCart(product) {
 
 function getProductImage(product) {
   const categoryImages = {
-    fiction: '/images/feature-books.jpg',
-    textbooks: '/images/feature-textbooks.jpg',
-    reference: '/images/feature-books.jpg',
-    stationery: '/images/stationery.jpg'
+    fiction: './images/feature-books.jpg',
+    textbooks: './images/feature-textbooks.jpg',
+    reference: './images/feature-books.jpg',
+    stationery: './images/stationery.jpg'
   }
   
   if (product && product.image) {
@@ -66,7 +66,7 @@ function getProductImage(product) {
     return categoryImages[product.category]
   }
   
-  return '/images/default.jpg'
+  return './images/default.jpg'
 }
 
 function openModal(product) {
