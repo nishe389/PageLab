@@ -3,7 +3,7 @@ import { reactive } from 'vue';
 import { useData } from './useData';
 import modal from './components/modal.vue';
 import Footer from './components/Footer.vue';
-import logo from './assets/logo.png';
+import logo from '../dist/images/logo.png';
 
 const { state, logoutUser, addToCart } = useData();
 
@@ -216,7 +216,7 @@ const local = reactive({
             price: 1500,
             author: 'Географическое общество',
             description: 'Подробный атлас мира с картами',
-            image: '/images/feature-books.jpg'
+            image: './images/feature-books.jpg'
         },
         {
             id: 23,
