@@ -1,6 +1,6 @@
 <script setup>
 // Здесь можно добавить необходимые импорты и логику
-import logo from '../dist/images/logo.png';
+import logo from '../../dist/images/logo.png';
 </script>
 
 <template>
